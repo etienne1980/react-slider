@@ -10,10 +10,12 @@ import { FaQuoteRight } from 'react-icons/fa'
 import { useState } from "react";
 import Breadcrumbs from "./Breadcrumbs";
 
+let bc = 'Autoplay Slider';
 
 const SliderSlick = () => {
 
     let [people, setPeople] = useState(list)
+    let [bcTitle, setBcTitle] = useState(bc);
 
     const settings = {
         dots: true,
@@ -31,7 +33,7 @@ const SliderSlick = () => {
     return (
              <section className="slick-container">
 
-                <Breadcrumbs title='Slider (autoplay, stop on hover)'/>
+                <Breadcrumbs title={bcTitle}/>
 
                 <Slider {...settings}>
                 {people.map((item)=>{
