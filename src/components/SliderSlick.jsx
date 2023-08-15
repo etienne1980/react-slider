@@ -29,8 +29,6 @@ const SliderSlick = () => {
     };
 
     return (
-
-          
              <section className="slick-container">
 
                 <Breadcrumbs title='Slider (autoplay, stop on hover)'/>
