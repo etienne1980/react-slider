@@ -1,4 +1,5 @@
 
+// using a react library (slick carousel) to create a ready made slider 
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -14,9 +15,13 @@ let bc = 'Autoplay Slider';
 
 const SliderSlick = () => {
 
-    let [people, setPeople] = useState(list)
+    // state
+    let [people, setPeople] = useState(list);
+
+    // state
     let [bcTitle, setBcTitle] = useState(bc);
 
+    // setting set up fro the slider
     const settings = {
         dots: true,
         infinite: true,
@@ -36,6 +41,8 @@ const SliderSlick = () => {
                 <Breadcrumbs title={bcTitle}/>
 
                 <Slider {...settings}>
+
+                {/* return of the elements */}
                 {people.map((item)=>{
                 let {id, name, title, image, quote} = item
                 return (

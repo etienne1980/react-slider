@@ -1,4 +1,6 @@
-import SliderSlick from "./components/SliderSlick";
+// import SliderSlick from "./components/SliderSlick";
+
+import Carousel from "./components/Carousel";
 
 
 const App = () => {
@@ -7,8 +9,9 @@ const App = () => {
   return (
     <main>
 
-      <SliderSlick/>
+      {/* <SliderSlick/> */}
 
+      <Carousel/>
     </main>
   );
 };

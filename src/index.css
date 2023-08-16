@@ -277,7 +277,7 @@ ul {
 
   /* using overflow hidden in order not to see the translated slide. this way only the active slide will be displayed */
 
-  /* overflow: hidden; */
+  overflow: hidden;
 
 }
 
@@ -431,7 +431,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   color: var(--black);
-  margin-block-end: 2rem;
+  margin: 4rem 10rem;
 }
 
 .bc a {
